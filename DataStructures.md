@@ -1,5 +1,3 @@
-# Data Structures and Algorithms
-
 # Table of contents
 1. [Big O Notation](#bigo)
    
