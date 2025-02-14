@@ -1,6 +1,9 @@
 # Data Structures and Algorithms
 
-## Big O Notation
+# Table of contents
+1. [Big O Notation](#bigo)
+   
+## Big O Notation <a name="bigo"></a>
 
 ![Big O Notation](image.png)
 
@@ -29,7 +32,7 @@
 - adding nested loops for every element .
 ---
 
-### **Rule 1 - Worst Case**
+### **Rule 1 - Worst Case** 
 - Always consider the worst-case scenario of a function.
 - In the example below, "nemo" could be found in `array[0]` or `array[n]`.
 - The worst case is `array[n]`, so the Big O is **O(n)**.
