@@ -1,6 +1,8 @@
 # Table of contents
 1. [Big O Notation](#bigo)
 2. [Steps to solve a problem](#steps)
+3. [Data Structures](#ds)
+   1. [Arrays](#arrays)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -81,7 +83,7 @@
 - Here we dont do any allocations or function calls so it ```O(n)```
  ![alt text](image-9.png)
 - Here we do variables and allocations so its ```O(1 + n)``` goes ```O(n)```
----
+
 ### Steps to solve a problem <a name="steps"></a>
 1. Write down the key points of a problem.
 2. Write down the sample input and output.
@@ -90,3 +92,22 @@
 5. Then start your best approach.
 6. Think about all the error checks and add a fix for that error.
 7. Then test your code with all type of ```input, no input, null, undefined```
+
+---
+## Data Structures <a name="ds"></a>
+
+### Arrays <a name=arrays></a>
+
+**Static Arrays**
+- These are the arrays with fixed size.
+
+**Dynamic Arrays**
+- These are the arrays without fixed size.
+
+#### Time constrins of array methods
+![alt text](image-10.png)
+
+### Notes
+- If you get any string related questions then split into array.Then 
+
+![alt text](image-11.png)
