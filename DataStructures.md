@@ -1,5 +1,6 @@
 # Table of contents
 1. [Big O Notation](#bigo)
+2. [Steps to solve a problem](#steps)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -74,10 +75,18 @@
 - Function calls
 - Allocations
 
-### **How to calculate big O for space***
+### **How to calculate big O for space**
 
 ![alt text](image-8.png)
 - Here we dont do any allocations or function calls so it ```O(n)```
  ![alt text](image-9.png)
 - Here we do variables and allocations so its ```O(1 + n)``` goes ```O(n)```
-
+---
+### Steps to solve a problem <a name="steps"></a>
+1. Write down the key points of a problem.
+2. Write down the sample input and output.
+3. Start with a easy approach.
+4. Then think of its problem in that approach and tell them why its no the best like its ```O(n^2)``` etc..
+5. Then start your best approach.
+6. Think about all the error checks and add a fix for that error.
+7. Then test your code with all type of ```input, no input, null, undefined```
