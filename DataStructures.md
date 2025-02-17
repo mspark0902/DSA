@@ -3,6 +3,7 @@
 2. [Steps to solve a problem](#steps)
 3. [Data Structures](#ds)
    1. [Arrays](#arrays)
+   2. [Hashtables](#hashtables)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -107,7 +108,23 @@
 #### Time constrins of array methods
 ![alt text](image-10.png)
 
-### Notes
+#### Notes
 - If you get any string related questions then split into array.Then 
 
 ![alt text](image-11.png)
+
+### Hashtables <a name=hashtables></a>
+- Hashtables are key value pairs. Key values are convereted into hashes. For example : ```Objects``` in js
+- In hashtable we can have keys of any type. Ex: ```Map``` in js. In Map datas are inserted in sequential order. Not random memory like object.
+- We have also ```Sets``` in js. It can only store the keys. 
+
+#### HashFunction
+- Takes the key and convert it to hashes and assings a memory address.
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+#### Hashtable Collision
+- In hashtables there is posibility of two different hashes may share the same memory space.
+![alt text](image-14.png)
