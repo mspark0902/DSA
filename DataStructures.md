@@ -128,3 +128,14 @@
 #### Hashtable Collision
 - In hashtables there is posibility of two different hashes may share the same memory space.
 ![alt text](image-14.png)
+
+#### Hashtable Vs Arrays
+- Search is ```O(n)``` in arrays where as its ```O(1)``` in Hashtables. Likewise many methods.
+![alt text](image-16.png)
+- The major difference is hashtables datas are store in diffrent index, irrespective of the order. whereas in arrays the datas are store in sequential order starting index ```0```
+
+#### Pros and Cons
+- We use hashtables mostly for time optimizaition but it may take more space. There is always a tradeoff between these time and space. If time is more important then use hashtables.
+- There can be possible collision but our progamming language handles it internally. We dont need to worry.
+
+![alt text](image-15.png)
