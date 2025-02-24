@@ -21,4 +21,4 @@ const reverseString2 = (string) => {
     return reversed.join('')
 }
 
-console.log(reverseString("santhosh"));
+console.log(reverseString("This is not a valid input"));

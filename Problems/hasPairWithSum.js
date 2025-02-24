@@ -18,7 +18,7 @@ const checkPairSumNaive = (array, sum) => {
 }
 
 const array1 = [1 ,2, 4, 5, 7];
-checkPairSumNaive(array1, 7); //O(n^2)
+//checkPairSumNaive(array1, 7); //O(n^2)
 
 
 const checkPairSum = (array, sum) => {
@@ -41,6 +41,25 @@ const checkPairSum = (array, sum) => {
     return false;
 }
 
-console.log(checkPairSum(array1,67)) //O(n)
+//console.log(checkPairSum(array1,67)) //O(n)
 
 //TODO write a approach if unsorted
+
+//[2, 1 , 5,  4, 7] sum: 8 {6:2, 7: 1, 3: 5, 4:4, 1:7}
+const checkPairSumUnSorted = (array, sum) =>{
+ var compliments =  new Map();
+
+ for(var i = 0; i < array.length ; i++){
+    let compliment = sum - array[i];
+    if(compliments[array[i]]){
+       return true;
+    }
+    else{
+        compliments[compliment] = array[i];
+    }
+   
+ }
+ return false;
+}
+
+console.log(checkPairSumUnSorted(array1,18))
