@@ -1,4 +1,4 @@
-//Create a function that takes two sorted arrays andmerge into 1 array which is sorted
+//Create a function that takes two sorted arrays and merge into 1 array which is sorted
 
 //Input [1,2,45,65] [4,45,49] returns [1,2,4,45,45,49,65]
 

@@ -62,7 +62,7 @@
 - Iterating to half a collection is ```O(n)```. 
 - Iteration to two different inputs is ```O(n + m)```.  
 
-### **How to chose a best code?** 
+### **How to choose a best code?** 
 ![alt text](image-7.png)
 
 - So the Big ```O``` reley on space and time complexity. we can also calculate big ```O``` for space.
@@ -106,7 +106,7 @@
 **Dynamic Arrays**
 - These are the arrays without fixed size.
 
-#### Time constrins of array methods
+#### Time constraints of array methods
 ![alt text](image-10.png)
 
 #### Notes
@@ -133,7 +133,7 @@
 #### Hashtable Vs Arrays
 - Search is ```O(n)``` in arrays where as its ```O(1)``` in Hashtables. Likewise many methods.
 ![alt text](image-16.png)
-- The major difference is hashtables datas are store in diffrent index, irrespective of the order. whereas in arrays the datas are store in sequential order starting index ```0```
+- The major difference is hashtables datas are store in different index, irrespective of the order. whereas in arrays the datas are store in sequential order starting index ```0```
 
 #### Pros and Cons
 - We use hashtables mostly for time optimizaition but it may take more space. There is always a tradeoff between these time and space. If time is more important then use hashtables.
