@@ -6,6 +6,7 @@
    2. [Hashtables](#hashtables)
    3. [Linked Lists](#ll)
    4. [Stacks and Queues](#stacks)
+   5. [Trees](#trees)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -186,3 +187,6 @@
 
 #### Why we are not using arrays to build queues?
 - The reason is when we pop or push something. all the items in the array are reindexing. i.e changing their indexes.
+
+### Trees <a name=trees></a>
+![alt text](image-26.png)
