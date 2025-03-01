@@ -5,6 +5,7 @@
    1. [Arrays](#arrays)
    2. [Hashtables](#hashtables)
    3. [Linked Lists](#ll)
+   4. [Stacks and Queues](#stacks)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -172,3 +173,16 @@
 
 #### Difference singly vs doubly
 ![alt text](image-23.png)
+
+### Stacks and queues <a name=stacks></a>
+
+#### Stacks
+- Last in first out.
+  ![alt text](image-24.png)
+
+#### Queues
+- First in first out.
+  ![alt text](image-25.png)
+
+#### Why we are not using arrays to build queues?
+- The reason is when we pop or push something. all the items in the array are reindexing. i.e changing their indexes.
