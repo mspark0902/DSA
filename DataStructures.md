@@ -35,6 +35,12 @@
 
 ### **O(n!) - Factorial**
 - adding nested loops for every element .
+
+### O(log n) - Logarithmic Time
+- It means that as the input size (n) increases, the number of steps grows slowly, rather than increasing linearly (O(n)) or quadratically (O(n²)).
+  ![alt text](image-28.png)
+  ![alt text](image-29.png)
+
 ---
 
 ### **Rule 1 - Worst Case** 
@@ -190,3 +196,45 @@
 
 ### Trees <a name=trees></a>
 ![alt text](image-26.png)
+
+#### Binary Tree
+- Each node can only have 0,1 or 2 nodes.
+- Each child can only have one parent.
+- A perfect binary tree has everything filled in. The bottom layer has 0nodes.
+- A Full binary tree the node has 0 or 2 childrens. Not 1 children.
+  ![alt text](image-27.png)
+
+#### Binary Search Tree
+![alt text](image-30.png)
+  - #### Rules  
+    - All child node in the right is greater than the parent node.
+    - On the left side it decreases.
+    - And all other rules of binary tree. 
+
+#### Unbalanced Binary Search Tree
+![alt text](image-31.png)
+
+![alt text](image-32.png)
+
+- Operations will become costlier.
+
+#### AVL Tree
+-  It automatically balances the binary tree. By swapping the elements. 
+
+#### Red Black Tree
+- Same are AVL Tree. It automatically balances the tree by switching elements.
+
+#### Heaps
+- In Binary heaps every parent node is greater than its child nodes. Its called ```max heap```. 
+- The opposite of it is called ```min heap```. 
+  ![alt text](image-33.png)
+- The lookup is costlier than binary tree because. The left and right is not ordered like binary tree. 
+
+
+#### Trie
+
+- It is predefined data structure. Usefull in solving the problems with strings.
+  ![alt text](image-34.png)
+- In this example I inserted words ```Are``` and ```Article``` and it looks like
+  ![alt text](image-35.png)
+- For more visualization [click here](https://www.cs.usfca.edu/~galles/visualization/Trie.html)
