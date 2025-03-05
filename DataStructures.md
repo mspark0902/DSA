@@ -1,4 +1,5 @@
 # Table of contents
+![alt text](image-40.png)
 1. [Big O Notation](#bigo)
 2. [Steps to solve a problem](#steps)
 3. [Data Structures](#ds)
@@ -7,6 +8,7 @@
    3. [Linked Lists](#ll)
    4. [Stacks and Queues](#stacks)
    5. [Trees](#trees)
+   6. [Graphs](#graphs)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -238,3 +240,9 @@
 - In this example I inserted words ```Are``` and ```Article``` and it looks like
   ![alt text](image-35.png)
 - For more visualization [click here](https://www.cs.usfca.edu/~galles/visualization/Trie.html)
+
+### Graphs <a name=graphs></a>
+![alt text](image-36.png)
+
+#### Types of graphs
+![alt text](image-37.png)![alt text](image-38.png)![alt text](image-39.png)
