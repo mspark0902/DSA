@@ -1,5 +1,5 @@
 # Table of contents
-![alt text](image-40.png)
+![alt text](images/image-40.png)
 1. [Big O Notation](#bigo)
 2. [Steps to solve a problem](#steps)
 3. [Data Structures](#ds)
@@ -11,10 +11,17 @@
    6. [Graphs](#graphs)
 4. [Algorithms](#algorithms)
    1. [Recursions](#recursions)
+   2. [Sorting](#sorting)
+      1. [Bubble sort](#bubble)
+      2. [Selection sort](#selection)
+      3. [Insertion sort](#insertion)
+      4. [Merge sort](#merge)
+      5. [Quick sort](#quick)
+      6. [Radix sort](#radix)
    
 ## Big O Notation <a name="bigo"></a>
 
-![Big O Notation](image.png)
+![Big O Notation](images/image.png)
 
 ### Rules for Calculating Big O
 
@@ -34,7 +41,7 @@
 - Example: `console.log(array[1])`
 
 ### **O(n^2) - Quadratic Time**
-![Quadratic Time](image-5.png)
+![Quadratic Time](images/image-5.png)
 - Whenever we have nested loops, it becomes `O(n * n)`, which is `O(n^2)`.
 
 ### **O(n!) - Factorial**
@@ -42,8 +49,8 @@
 
 ### O(log n) - Logarithmic Time
 - It means that as the input size (n) increases, the number of steps grows slowly, rather than increasing linearly (O(n)) or quadratically (O(n²)).
-  ![alt text](image-28.png)
-  ![alt text](image-29.png)
+  ![alt text](images/image-28.png)
+  ![alt text](images/image-29.png)
 
 ---
 
@@ -51,22 +58,22 @@
 - Always consider the worst-case scenario of a function.
 - In the example below, "nemo" could be found in `array[0]` or `array[n]`.
 - The worst case is `array[n]`, so the Big O is **O(n)**.
-![Worst Case Example](image-1.png)
+![Worst Case Example](images/image-1.png)
 
 ### **Rule 2 - Remove Constants**
-  ![Remove Constants Example](image-2.png)
+  ![Remove Constants Example](images/image-2.png)
 - In this example, we remove the constants: `O(1 + n/2 + 100)` becomes `O(n)`.
 
 ### **Rule 3 - Different Terms for Inputs**
-![Different Terms Example](image-3.png)
+![Different Terms Example](images/image-3.png)
 - The Big O here is `O(2n)`. After dropping the constants, it becomes `O(n)`.
 - However, if the inputs are different:
-  ![Different Inputs Example](image-4.png)
+  ![Different Inputs Example](images/image-4.png)
   - Then the Big O is `O(a + b)`.
 
 ### **Rule 4 - Drop Non-Dominants**
 - Always keep the dominant terms and remove non-dominant ones.
-![Drop Non-Dominants Example](image-6.png)
+![Drop Non-Dominants Example](images/image-6.png)
 - In this case, if `x` is 5, the largest term is 100. However, we always consider scalability. If `x` is 500, `x^2` becomes dominant. Thus, the answer is `O(x^2)`.
 - If the nested loops grow, the power value increases (e.g., 2, 3, 4, etc.). However, this is not ideal for performance.
 
@@ -75,7 +82,7 @@
 - Iteration to two different inputs is ```O(n + m)```.  
 
 ### **How to choose a best code?** 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 - So the Big ```O``` reley on space and time complexity. we can also calculate big ```O``` for space.
 
@@ -93,9 +100,9 @@
 
 ### **How to calculate big O for space**
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 - Here we dont do any allocations or function calls so it ```O(n)```
- ![alt text](image-9.png)
+ ![alt text](images/image-9.png)
 - Here we do variables and allocations so its ```O(1 + n)``` goes ```O(n)```
 
 ### Steps to solve a problem <a name="steps"></a>
@@ -119,12 +126,12 @@
 - These are the arrays without fixed size.
 
 #### Time constraints of array methods
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 #### Notes
 - If you get any string related questions then split into array.Then 
 
-  ![alt text](image-11.png)
+  ![alt text](images/image-11.png)
 
 ### Hashtables <a name=hashtables></a>
 - Hashtables are key value pairs. Key values are convereted into hashes. For example : ```Objects``` in js
@@ -134,42 +141,42 @@
 #### HashFunction
 - Takes the key and convert it to hashes and assings a memory address.
 
-  ![alt text](image-12.png)
+  ![alt text](images/image-12.png)
 
-  ![alt text](image-13.png)
+  ![alt text](images/image-13.png)
 
 #### Hashtable Collision
 - In hashtables there is posibility of two different hashes may share the same memory space.
-  ![alt text](image-14.png)
+  ![alt text](images/image-14.png)
 
 #### Hashtable Vs Arrays
 - Search is ```O(n)``` in arrays where as its ```O(1)``` in Hashtables. Likewise many methods.
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 - The major difference is hashtables datas are store in different index, irrespective of the order. whereas in arrays the datas are store in sequential order starting index ```0```
 
 #### Pros and Cons
 - We use hashtables mostly for time optimizaition but it may take more space. There is always a tradeoff between these time and space. If time is more important then use hashtables.
 - There can be possible collision but our progamming language handles it internally. We dont need to worry.
 
-  ![alt text](image-15.png)
+  ![alt text](images/image-15.png)
 
 ### Linked Lists <a name=ll></a>
 
 - Lists which are linked. The first node is head and last node is tail
 
-  ![alt text](image-17.png)
+  ![alt text](images/image-17.png)
 
 - Each links have the pointers and the last tail does not have a pointer.
  
-  ![alt text](image-18.png)
+  ![alt text](images/image-18.png)
 
 - Check this link to see how Linkedlist works [here](https://visualgo.net/en/list)
 
-  ![alt text](image-19.png)
+  ![alt text](images/image-19.png)
 
 #### Pointers
 - Pointers hold the reference to a memory location.
-  ![alt text](image-20.png)
+  ![alt text](images/image-20.png)
   - in the above example ```{a: true}``` is a value in the memory. So both ```obj1``` and ```obj2``` holds the reference to that memrory location. 
 
 #### Doubly linked list
@@ -177,48 +184,48 @@
 - So compare to singly searching will be more effecient.
 - In singly we can only traverse from start to end. But here we can also do end to start.
 
-  ![alt text](image-21.png)
+  ![alt text](images/image-21.png)
 
 #### Pros and Cons
-![alt text](image-22.png)
+![alt text](images/image-22.png)
 
 #### Difference singly vs doubly
-![alt text](image-23.png)
+![alt text](images/image-23.png)
 
 ### Stacks and queues <a name=stacks></a>
 
 #### Stacks
 - Last in first out.
-  ![alt text](image-24.png)
+  ![alt text](images/image-24.png)
 
 #### Queues
 - First in first out.
-  ![alt text](image-25.png)
+  ![alt text](images/image-25.png)
 
 #### Why we are not using arrays to build queues?
 - The reason is when we pop or push something. all the items in the array are reindexing. i.e changing their indexes.
 
 ### Trees <a name=trees></a>
-![alt text](image-26.png)
+![alt text](images/image-26.png)
 
 #### Binary Tree
 - Each node can only have 0,1 or 2 nodes.
 - Each child can only have one parent.
 - A perfect binary tree has everything filled in. The bottom layer has 0nodes.
 - A Full binary tree the node has 0 or 2 childrens. Not 1 children.
-  ![alt text](image-27.png)
+  ![alt text](images/image-27.png)
 
 #### Binary Search Tree
-![alt text](image-30.png)
+![alt text](images/image-30.png)
   - #### Rules  
     - All child node in the right is greater than the parent node.
     - On the left side it decreases.
     - And all other rules of binary tree. 
 
 #### Unbalanced Binary Search Tree
-![alt text](image-31.png)
+![alt text](images/image-31.png)
 
-![alt text](image-32.png)
+![alt text](images/image-32.png)
 
 - Operations will become costlier.
 
@@ -231,29 +238,48 @@
 #### Heaps
 - In Binary heaps every parent node is greater than its child nodes. Its called ```max heap```. 
 - The opposite of it is called ```min heap```. 
-  ![alt text](image-33.png)
+  ![alt text](images/image-33.png)
 - The lookup is costlier than binary tree because. The left and right is not ordered like binary tree. 
 
 
 #### Trie
 
 - It is predefined data structure. Usefull in solving the problems with strings.
-  ![alt text](image-34.png)
+  ![alt text](images/image-34.png)
 - In this example I inserted words ```Are``` and ```Article``` and it looks like
-  ![alt text](image-35.png)
+  ![alt text](images/image-35.png)
 - For more visualization [click here](https://www.cs.usfca.edu/~galles/visualization/Trie.html)
 
 ### Graphs <a name=graphs></a>
-![alt text](image-36.png)
+![alt text](images/image-36.png)
 
 #### Types of graphs
-![alt text](image-37.png)![alt text](image-38.png)![alt text](image-39.png)
+![alt text](images/image-37.png)![alt text](images/image-38.png)![alt text](images/image-39.png)
 
 ## Algorithms <a name="algorithms"></a>
 
 ### Recursions <a name = "recursions"></a>
  - Calling the function inside the same function with some condition.
-    ![alt text](image-41.png)
+    ![alt text](images/image-41.png)
 
 #### When can we use recurssion?
-![alt text](image-42.png)
+![alt text](images/image-42.png)
+
+### Sorting <a name="sorting"></a>
+
+#### Bubble sort <a name= "bubble"></a>
+- Go through the array, one value at a time.
+- For each value, compare the value with the next value.
+- If the value is higher than the next one, swap the values so that the highest value comes last.
+- Go through the array as many times as there are values in the array.
+
+#### Selection sort <a name= "selection"></a>
+- Go through the array to find the lowest value.
+- Move the lowest value to the front of the unsorted part of the array.
+- Go through the array again as many times as there are values in the array.
+
+#### Insertion sort <a name= "insertion"></a>
+- This is good for small data sets or data's which are almost looks sorted.
+- Take the first value from the unsorted part of the array.
+- Move the value into the correct place in the sorted part of the array.
+- Go through the unsorted part of the array again as many times as there are values.
