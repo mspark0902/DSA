@@ -9,6 +9,8 @@
    4. [Stacks and Queues](#stacks)
    5. [Trees](#trees)
    6. [Graphs](#graphs)
+4. [Algorithms](#algorithms)
+   1. [Recursions](#recursions)
    
 ## Big O Notation <a name="bigo"></a>
 
@@ -246,3 +248,12 @@
 
 #### Types of graphs
 ![alt text](image-37.png)![alt text](image-38.png)![alt text](image-39.png)
+
+## Algorithms <a name="algorithms"></a>
+
+### Recursions <a name = "recursions"></a>
+ - Calling the function inside the same function with some condition.
+    ![alt text](image-41.png)
+
+#### When can we use recurssion?
+![alt text](image-42.png)
