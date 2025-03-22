@@ -28,7 +28,7 @@ const selectionSort = (array) => {
     return array; 
 }
 
-//input: [8,3,1,2,1,12,40]
+
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
         for (let j = i; j > 0; j--) {
@@ -41,6 +41,50 @@ const insertionSort = (array) => {
     }
     return array;
 };
-console.log(bubbleSort(data));
-console.log(selectionSort(data));
-console.log(insertionSort(data));
+
+//input: [8,3,2,1]
+const mergeSort = (array) => {
+   if(array.length === 1) return array;
+
+   var mid = Math.floor(array.length / 2)
+
+   var left = array.slice(0, mid);
+
+   var right = array.slice(mid);
+
+   return merge(mergeSort(left), mergeSort(right))
+};
+
+const merge = (left, right) =>{
+    var newArray = [];
+    let i = 0, j = 0;
+   
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) {
+            newArray.push(left[i]);
+            i++;
+        } else {
+            newArray.push(right[j]);
+            j++;
+        }
+    }
+
+    // Add remaining elements from left (if any)
+    while (i < left.length) {
+        newArray.push(left[i]);
+        i++;
+    }
+
+    // Add remaining elements from right (if any)
+    while (j < right.length) {
+        newArray.push(right[j]);
+        j++;
+    }
+
+    return newArray;
+}
+
+// console.log(bubbleSort(data));
+// console.log(selectionSort(data));
+// console.log(insertionSort(data));
+console.log(mergeSort(data));
